@@ -24,6 +24,7 @@ function Card() {
   return (
     <div className="container">
     <div className="card">
+    
     <img src={mypicture} alt="swimmer" height="350px" width="100%" style={{float: 'none'}} />
       <div className="content">
       <h1>Maria Jose </h1>

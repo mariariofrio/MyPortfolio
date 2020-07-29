@@ -1,5 +1,5 @@
 import React from "react";
-import "../Portfolio/Portfolio.css";
+import "../mylinkpages/Portfolio.css";
 // import mypicture from "../Portfolio/mypicture.jpg"
 
 function Card() {
