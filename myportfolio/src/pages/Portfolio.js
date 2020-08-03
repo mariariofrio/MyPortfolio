@@ -1,5 +1,5 @@
 import React from "react";
-import "../mylinkpages/Portfolio.css";
+import "./Portfolio.css";
 import projects from "../assets/projects.json";
 import Project from "../component/Projects/Project";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import "../Profile/Profile.css";
-import mypicture from "../../assets/mypicture.jpg"
+import "../pages/Profile.css";
+import mypicture from "../assets/mypicture.jpg"
 
 
 function Card() {

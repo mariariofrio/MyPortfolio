@@ -1,6 +1,6 @@
 import React from "react";
 // import "../mylinkpages/Portfolio.css";
-import github from  "../mylinkpages/github.png";
+import github from  "../assets/github.png";
 
 function Contact() {
     return (

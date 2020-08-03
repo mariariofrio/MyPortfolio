@@ -1,48 +1,37 @@
-import React, { useState } from 'react';
-import Contact from "./mylinkpages/Contact.jsx";
-import Profilecard from "./component/Profile/Profilecard";
-import Portfolio from "./mylinkpages/Portfolio";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Contact from "./pages/Contact"
+import Profilecard from "./pages/Profilecard";
+import Portfolio from "./pages/Portfolio";
 import './App.css';
 import Footer from "./component/Footer/Footer.jsx";
 import NavTabs from "./component/Navbar/NavTabs";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./component/header/Header";
+import Wrapper from "./component/wrapper";
 
 
 
 
 
 function App() {
-  const pathArray = window.location.pathname.split("/");
-  let basePath = "";
-
-  if (pathArray.length > 0) {
-    pathArray.pop();
-    basePath = pathArray.join("/");
-  };
-
-  const [pathState] = useState(basePath);
-
+ 
   return (
     
-    <Router basename={pathState}>
+    <Router>
       <div>
         <NavTabs />
         <Header />
         <Switch>
-        <Route exact path={["/", "/Profilecard"]}>
-            <Profilecard />
-          </Route>
-          <Route exact path="/Portfolio">
-            <Portfolio />
-          </Route>
-          <Route exact path="/Contact">
-            <Contact />
-          </Route>
+        <Wrapper>
+        <Route exact path="/" component={Profilecard} />
+        <Route exact path="/Portfolio" component={Portfolio} />
+        <Route exact path="/Contact" component={Contact}>
+        </Route>
+        </Wrapper>
         </Switch>
+        <Footer />
         
       </div>
-        <Footer />
     </Router>
 
   );
