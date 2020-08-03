@@ -4,10 +4,13 @@ import projects from "../assets/projects.json";
 import Project from "../component/Projects/Project";
 
 
-function Portfolio() {
-  return (
-    <div className="container">
-      <div className="card">
+function Portfolio({ classes , source, alttext }) {
+  return (  
+   <div className="columns">
+    <div className="cards">
+
+      <img className={"myimages" + classes} src={source} alt={alttext} />
+        
 
         {projects.map(project => (
           <Project key={project.id} {...project}></Project>
@@ -17,6 +20,6 @@ function Portfolio() {
     </div >
         
   );
-};
+}
 
 export default Portfolio;

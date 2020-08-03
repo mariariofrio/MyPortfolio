@@ -1,24 +1,18 @@
 import React from "react";
 
 
-function Project({ name, type, sitelink, repolink, image }) {
+function Project({ projectname, type, sitelink, repolink, image, description }) {
   
-//   let depLink;
-//   if (repolink.has("http")) {
-//     depLink = repolink;
-//   }
-//   else {
-//     depLink = require("../../assets/" + repolink);
-//   };
+
 
   return (
     <div page="Portfolio">
         
-        <div htmlRef={repolink}>
-          <img classes="my-image" source={require("../../assets/" + image)} altText={name} />
+        <div htmlref={repolink}>
+          <img classes="myimages" source={require("../../assets/" + image)} alttext={projectname} />
         </div>
-        <ul htmlRef={sitelink}>
-          <li>{name} {type}</li>
+        <ul htmlref={sitelink}>
+          <li>{projectname} {type} {description}</li>
         </ul>
     </div>
   );
