@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "./mylinkpages/Contact";
+import Contact from "./mylinkpages/Contact.jsx";
 import Profilecard from "./component/Profile/Profilecard";
 import Portfolio from "./mylinkpages/Portfolio";
 import './App.css';
@@ -10,16 +10,20 @@ import Header from "./component/header/Header";
 
 
 
+
+
 function App() {
 
   return (
     <Router>
       <div>
         <NavTabs />
+        <switch>
         <Header />
         <Route exact path = "/" component={Profilecard} />
         <Route exact path = "/Portfolio" component={Portfolio} />
         <Route exact path = "/Contact" component={Contact} />
+        </switch>
         <Footer />
         
       </div>

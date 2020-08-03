@@ -1,19 +1,19 @@
 import React from "react";
 import "../header/header.css";
-import fullstack from "../header/fullstack.jpg";
+import fullstack from "../../assets/fullstack.jpg";
 
 function Header() {
   return (
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container d-flex justify-content-center">
+    <div className="jumbotron jumbotron-fluid">
+      <div className="container ">
 
-        <div class="columns">
-          <div class="column">
-            <h1 class="font"> Welcome to my page </h1>
+        <div className="columns">
+          <div className="column">
+            <h1 className="font"> Welcome to my page </h1>
 
             <h3> I am a Full-Stack Developer</h3>
-            {/* <img class="fullstack" src="assets/fullstack.jpg" style="height: 300px; width: auto fit-content"></img> */}
-            <img src={fullstack} alt="swimmer" height="300px" width="auto fit-content" style={{float: 'left'}} />
+            {/* <img className="fullstack" src="assets/fullstack.jpg" style="height: 300px; width: auto fit-content"></img> */}
+            <img src={fullstack} alt="swimmer" height="300px" width="auto fit-center" style={{float: ''}} />
           </div>  
         </div>
       </div>
