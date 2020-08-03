@@ -12,7 +12,8 @@ function Project({ name, type, sitelink, repolink, image }) {
 //   };
 
   return (
-    <div page="MyPortfolio">
+    <div page="Portfolio">
+        
         <div htmlRef={repolink}>
           <img classes="my-image" source={require("../../assets/" + image)} altText={name} />
         </div>

@@ -5,7 +5,7 @@ import Portfolio from "./mylinkpages/Portfolio";
 import './App.css';
 import Footer from "./component/Footer/Footer.jsx";
 import NavTabs from "./component/Navbar/NavTabs";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./component/header/Header";
 
 
@@ -18,12 +18,18 @@ function App() {
     <Router>
       <div>
         <NavTabs />
-        <switch>
         <Header />
-        <Route exact path = "/" component={Profilecard} />
-        <Route exact path = "/Portfolio" component={Portfolio} />
-        <Route exact path = "/Contact" component={Contact} />
-        </switch>
+        <Switch>
+        <Route exact path={["/", "/Profilecard"]}>
+            <Profilecard />
+          </Route>
+          <Route exact path="/Portfolio">
+            <Portfolio />
+          </Route>
+          <Route exact path="/Contact">
+            <Contact />
+          </Route>
+        </Switch>
         <Footer />
         
       </div>
