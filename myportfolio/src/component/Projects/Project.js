@@ -1,5 +1,5 @@
 import React from "react";
-
+import Anchor from "../Anchor"
 
 function Project({ projectname, type, sitelink, repolink, image, description }) {
   
@@ -7,13 +7,15 @@ function Project({ projectname, type, sitelink, repolink, image, description }) 
 
   return (
     <div page="Portfolio">
+        <Anchor>
+        <div href={repolink}>
         
-        <div htmlref={repolink}>
           <img classes="myimages" source={require("../../assets/" + image)} alttext={projectname} />
         </div>
-        <ul htmlref={sitelink}>
+        <ul href={sitelink}>
           <li>{projectname} {type} {description}</li>
         </ul>
+        </Anchor>
     </div>
   );
 }

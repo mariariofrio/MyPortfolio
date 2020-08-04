@@ -2,6 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import projects from "../assets/projects.json";
 import Project from "../component/Projects/Project";
+import Anchor from "../component/Anchor"
 
 
 function Portfolio({ classes , source, alttext }) {

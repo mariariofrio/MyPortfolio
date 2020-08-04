@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contact from "./pages/Contact"
 import Profilecard from "./pages/Profilecard";
 import Portfolio from "./pages/Portfolio";
-import './App.css';
-import Footer from "./component/Footer/Footer.jsx";
-import NavTabs from "./component/Navbar/NavTabs";
-import Header from "./component/header/Header";
+// import './App.css';
+import Footer from "./component/Footer/";
+import NavTabs from "./component/Navbar";
+import Header from "./component/header";
 import Wrapper from "./component/wrapper";
 
 
