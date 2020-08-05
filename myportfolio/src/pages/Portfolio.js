@@ -5,17 +5,19 @@ import Project from "../component/Projects/Project";
 import Anchor from "../component/Anchor"
 
 
-function Portfolio({ classes , source, alttext }) {
+const Card= props =>{
   return (  
-   <div className="columns">
-    <div className="cards">
-
-      <img className={"myimages" + classes} src={source} alt={alttext} />
-        
-
+   <div className="card text center">
+    <div className="overflow">
+      <img className='card-img-top' src={props.imgsrc} alt="image" />
+     </div> 
+     <div className= 'card-body text dark'>
+       <h4 className= 'card-title'>{props.title}</h4>
+<Anchor>
         {projects.map(project => (
           <Project key={project.id} {...project}></Project>
         ))}
+</Anchor>
 
       </div>
     </div >
@@ -23,4 +25,4 @@ function Portfolio({ classes , source, alttext }) {
   );
 }
 
-export default Portfolio;
+export default Card;

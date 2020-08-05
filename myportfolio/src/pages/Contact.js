@@ -38,7 +38,10 @@ function Contact() {
                                     class="LI-simple-link"
                                     
                                     href='https://www.linkedin.com/in/maria-jose-riofrio-b97780148?trk=profile-badge'></a>
-                            </div>        
+                            </div> 
+                            <hr></hr>
+                            <a href="https://docs.google.com/document/d/1OZ-gX6Os9Rnt8roIl1OzZNyJNyZsH5A7pja3Tgi9prk/edit?usp=sharing" font="black">Resume</a>
+
                     </div>
                 </Anchor>
             </div>
