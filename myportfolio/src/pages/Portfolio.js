@@ -4,6 +4,7 @@ import Peoplecards from "../component/Cards/Portfoliocards";
 import {Container, Row, Col } from 'reactstrap';
 import Projects from "../assets/projects.json"
 
+
 class Portfolio extends Component {
   constructor() {
     super();
@@ -13,15 +14,15 @@ class Portfolio extends Component {
   }
 
   render () {
-    let Portfoliocards = this.state.Projects.map(value => {
+    let Portfoliocards = this.state.Projects.map(project => {
       return (
-          <Col sm="4">
-          <Peoplecards value={value}/>
+          <Col sm="2">
+          <Peoplecards key={project.id} {...project}/>
           </Col>
       )
     })
     return (
-      <Container fluid>
+      <Container portfolio >
         <Row>
           {Portfoliocards}
         </Row>
@@ -30,5 +31,7 @@ class Portfolio extends Component {
     }
   } 
    
-
+//   {projects.map(project => (
+//     <Project key={project.id} {...project}></Project>
+// ))}
 export default Portfolio;

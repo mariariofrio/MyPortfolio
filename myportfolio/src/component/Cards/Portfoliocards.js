@@ -12,11 +12,11 @@ class Portofoliocards extends Component {
         return (
          <div>
             <Card>
-                <CardImg top width= "100%" src={this.props.Projects}></CardImg>
+                <CardImg top width= "100%" src={this.props.project}></CardImg>
                     <CardBody>
                         {/* <img className='card-img-top' src={props.imgsrc} alt="image" /> */}
                 
-                        <CardTitle> {this.props.Projects}
+                        <CardTitle> {this.props.project}
                         </CardTitle>
                         {/* // className='card-title'>{props.title} */}
                         {/* <Anchor>

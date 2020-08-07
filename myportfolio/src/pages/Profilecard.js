@@ -1,11 +1,15 @@
 import React from "react";
 import "../pages/Profile.css";
-import mypicture from "../assets/mypicture.jpg"
+import mypicture from "../assets/mypicture.jpg";
+import Header from "../component/header";
 
 
 function Card() {
   return (
-    <div className="container">
+    <>
+    <Header />
+    <div className="container profile">
+    
     <div className="card">
     
     <img src={mypicture} alt="swimmer" height="350px" width="100%" style={{float: 'none'}} />
@@ -15,6 +19,7 @@ function Card() {
       </div>
     </div>
     </div>
+    </>
   );
 }
 

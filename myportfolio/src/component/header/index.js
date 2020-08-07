@@ -5,7 +5,7 @@ import fullstack from "../../assets/fullstack.jpg";
 function Header() {
   return (
     <div className="jumbotron jumbotron-fluid">
-      <div className="container ">
+      <div className="container profile ">
 
         <div className="columns">
           <div className="column">

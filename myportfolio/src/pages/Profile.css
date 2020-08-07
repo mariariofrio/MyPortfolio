@@ -1,12 +1,13 @@
 /* @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500); */
 
   
-  .container  {
+  .profile  {
     width: 100%;
     padding-left: 27% !important; 
     padding-right: 15px !important;
     margin-left: auto;
     margin-left: auto;
+    padding-top: 5% !important;
   }
   .card {
     position:relative;

@@ -6,7 +6,7 @@ import Portfolio from "./pages/Portfolio";
 // import './App.css';
 import Footer from "./component/Footer/";
 import NavTabs from "./component/Navbar";
-import Header from "./component/header";
+
 import Wrapper from "./component/wrapper";
 
 
@@ -21,7 +21,7 @@ function App() {
     <Router>
       <div>
         <NavTabs />
-        <Header />
+  
         <Switch>
         <Wrapper>
         <Route exact path="/" component={Profilecard} />

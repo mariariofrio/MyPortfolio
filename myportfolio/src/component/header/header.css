@@ -2,6 +2,7 @@
     background-color: white;
     size: 100px;
     padding-bottom: 0%;
+    padding-top: 0% !important;
 }
 h2 {
     margin: 2% !important;

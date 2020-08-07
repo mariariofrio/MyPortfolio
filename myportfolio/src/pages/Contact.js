@@ -21,11 +21,11 @@ function Contact() {
                     <h6 className="text-uppercase font-weight-bold">Contact</h6>
                     {/* <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" width= "60px;"></hr> */}
                         <p>
-                            <i className="fas fa-home mr-3"></i> Georgia, US</p>
+                            <i></i> Georgia, US</p>
                         <p>
-                            <i className="fas fa-envelope mr-3"></i> maria.riofrio.mr@gmail.com</p>
+                            <i></i> maria.riofrio.mr@gmail.com</p>
                         <p>
-                            <i className="fas fa-phone mr-3"></i> + 01 678 283 7616</p>
+                            <i></i> + 01 678 283 7616</p>
                 </div>
                 <Anchor>
                     <div className="col-md-9 mb-md-0 mb-4">
