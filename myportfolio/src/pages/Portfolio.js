@@ -1,28 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Portfolio.css";
-import projects from "../assets/projects.json";
-import Project from "../component/Projects/Project";
-import Anchor from "../component/Anchor"
+import Peoplecards from "../component/Cards/Portfoliocards";
+import {Container, Row, Col } from 'reactstrap';
+import Projects from "../assets/projects.json"
 
+class Portfolio extends Component {
+  constructor() {
+    super();
+    this.state = {
+      Projects,
+    }
+  }
 
-const Card= props =>{
-  return (  
-   <div className="card text center">
-    <div className="overflow">
-      <img className='card-img-top' src={props.imgsrc} alt="image" />
-     </div> 
-     <div className= 'card-body text dark'>
-       <h4 className= 'card-title'>{props.title}</h4>
-<Anchor>
-        {projects.map(project => (
-          <Project key={project.id} {...project}></Project>
-        ))}
-</Anchor>
+  render () {
+    let Portfoliocards = this.state.Projects.map(value => {
+      return (
+          <Col sm="4">
+          <Peoplecards value={value}/>
+          </Col>
+      )
+    })
+    return (
+      <Container fluid>
+        <Row>
+          {Portfoliocards}
+        </Row>
+      </Container>
+    )
+    }
+  } 
+   
 
-      </div>
-    </div >
-        
-  );
-}
-
-export default Card;
+export default Portfolio;
