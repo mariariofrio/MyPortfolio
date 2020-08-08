@@ -4,7 +4,7 @@ import Contact from "./pages/Contact"
 import Profilecard from "./pages/Profilecard";
 import Portfolio from "./pages/Portfolio";
 // import './App.css';
-import Footer from "./component/Footer/";
+import Footer from "./component/Footer";
 import NavTabs from "./component/Navbar";
 
 import Wrapper from "./component/wrapper";

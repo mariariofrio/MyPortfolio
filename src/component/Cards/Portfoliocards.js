@@ -4,9 +4,9 @@ import React, { Component } from "react";
 // import Anchor from "../component/Anchor"
 import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
 import Anchor from "../Anchor";
-import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
+// import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
 // import Image from "../images"
-class PortfolioCards extends Component {
+class  PortfolioCards extends Component {
     constructor(props) {
         super(props);
     }
@@ -14,7 +14,7 @@ class PortfolioCards extends Component {
         return (
             <div>
                 <Card>
-                    <CardImg classes="my-image" source={require("../../assets/index" + Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp, Employeedirectory)} altText={""}>
+                    <CardImg classes="my-image" source={require("../../assets/index" )} altText={""}>
                         
                     </CardImg>
                     <CardBody>
@@ -39,4 +39,4 @@ class PortfolioCards extends Component {
     }
 }
 
-export default PortfolioCards;
+export default  PortfolioCards;
