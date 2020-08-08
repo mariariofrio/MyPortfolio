@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Portfolio.css";
-import Portofoliocards from "../component/Cards/Portfoliocards";
+import PortfolioCards from "../component/Cards/Portfoliocards";
 import {Container, Row, Col } from 'reactstrap';
 import Projects from "../assets/projects.json"
 
@@ -14,17 +14,17 @@ class Portfolio extends Component {
   }
 
   render () {
-    let Portfoliocards = this.state.Projects.map(project => {
+    let Portfoliocard = this.state.Projects.map(project => {
       return (
           <Col sm="4">
-          <Portofoliocards key={project.id} {...project}/>
+          <PortfolioCards key={project.id} {...project} atlText={""}/>
           </Col>
       )
     })
     return (
       <Container >
         <Row xs="4">
-          {Portfoliocards}
+          {Portfoliocard}
         </Row>
       </Container>
     )

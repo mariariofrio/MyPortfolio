@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 
-function Image({ classes, source, altText }) {
+function Image({ source, classes, altText }) {
   return <img className={"image " + classes} src={source} alt={altText} />;
 }
 

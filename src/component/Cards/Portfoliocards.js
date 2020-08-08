@@ -2,40 +2,41 @@ import React, { Component } from "react";
 // import projects from "../assets/projects.json";
 // import Project from "../component/Projects/Project";
 // import Anchor from "../component/Anchor"
-import {Card, CardImg, CardBody, CardTitle, CardText, CardLink} from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import Anchor from "../Anchor";
 import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
-class Portofoliocards extends Component {
+// import Image from "../images"
+class PortfolioCards extends Component {
     constructor(props) {
         super(props);
     }
     render() {
         return (
-         <div>
-            <Card>
-                <CardImg top width= "100%" src={Burgerapp}></CardImg>
+            <div>
+                <Card>
+                    <CardImg classes="my-image" source={require("../../assets/index" + Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp, Employeedirectory)} altText={""}>
+                        
+                    </CardImg>
                     <CardBody>
-                        {/* <img className='card-img-top' src={props.imgsrc} alt="image" /> */}
-                
                         <CardTitle> {this.props.projectname}
                         </CardTitle>
-                        {/* // className='card-title'>{props.title} */}
-                        {/* <Anchor>
-                            {projects.map(project => (
-                                <Project key={project.id} {...project}></Project>
-                            ))}
-                        </Anchor> */}
+                      
                         <CardText>{this.props.type}
-                        <CardText>{this.props.description}
+                            <CardText>{this.props.description}
+                            </CardText>
                         </CardText>
-                        </CardText>
-                        {/* <CardLink>{this.props.sitelink}</CardLink>
-                        <CardLink>{this.props.repolink}</CardLink> */}
-                    </CardBody>
+                        <Anchor htmlRef={this.props.repoLink}>
+                            <Anchor htmlRef={this.props.sitelink}>
+                            </Anchor>
+                           
+                    </Anchor>
                     
-            </Card>
-        </div >
+                </CardBody>
+        </Card>
+
+        </div>
         )
     }
 }
 
-export default Portofoliocards;
+export default PortfolioCards;
