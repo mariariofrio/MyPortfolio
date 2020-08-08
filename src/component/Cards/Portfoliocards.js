@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // import Project from "../component/Projects/Project";
 // import Anchor from "../component/Anchor"
 import {Card, CardImg, CardBody, CardTitle, CardText, CardLink} from 'reactstrap';
-
+import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
 class Portofoliocards extends Component {
     constructor(props) {
         super(props);
@@ -12,11 +12,11 @@ class Portofoliocards extends Component {
         return (
          <div>
             <Card>
-                <CardImg top width= "100%" src={this.props.project}></CardImg>
+                <CardImg top width= "100%" src={Burgerapp}></CardImg>
                     <CardBody>
                         {/* <img className='card-img-top' src={props.imgsrc} alt="image" /> */}
                 
-                        <CardTitle> {this.props.project}
+                        <CardTitle> {this.props.projectname}
                         </CardTitle>
                         {/* // className='card-title'>{props.title} */}
                         {/* <Anchor>
@@ -24,10 +24,12 @@ class Portofoliocards extends Component {
                                 <Project key={project.id} {...project}></Project>
                             ))}
                         </Anchor> */}
-                        <CardText>{this.props.Projects}
+                        <CardText>{this.props.type}
+                        <CardText>{this.props.description}
                         </CardText>
-                        <CardLink>{this.props.Projects}</CardLink>
-                        <CardLink>{this.props.Projects}</CardLink>
+                        </CardText>
+                        {/* <CardLink>{this.props.sitelink}</CardLink>
+                        <CardLink>{this.props.repolink}</CardLink> */}
                     </CardBody>
                     
             </Card>

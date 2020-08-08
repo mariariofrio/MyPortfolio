@@ -1,17 +1,20 @@
 /* @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500); */
+
   
-.container {
-  padding-top: 5%;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-left: auto;
-}
+  .profile  {
+    width: 100%;
+    padding-left: 27% !important; 
+    padding-right: 15px !important;
+    margin-left: auto;
+    margin-left: auto;
+    padding-top: 5% !important;
+    overflow: hidden !important;
+  }
   .card {
     position:relative;
-    width:330px;
-    height:412px;
+   
+    width:200px;
+    height:300px;
     background: #EEEEEE;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
@@ -20,7 +23,7 @@
   }
   .card .image {
     position:relative;
-    top:0;
+    top:20%;
     left:0;
     width:100%;
     height:100%;
@@ -30,11 +33,11 @@
     position:absolute;
     left:0;
     top:0;
-    width:50%;
+    width:100%;
     height:80%;
     display:block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     transition:0.5s;
     
   }
