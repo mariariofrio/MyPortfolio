@@ -1,6 +1,6 @@
 import React from "react";
 import "../header/header.css";
-import fullstack from "../../assets/fullstack.jpg";
+import fullstack from "../header/fullstack.jpg";
 
 function Header() {
   return (

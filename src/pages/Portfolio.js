@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Portfolio.css";
 import PortfolioCards from "../component/Cards/Portfoliocards";
 import {Container, Row, Col } from 'reactstrap';
-import Projects from "../assets/projects.json"
+import Projects from "../component/projects.json"
 
 
 class Portfolio extends Component {
@@ -14,10 +14,10 @@ class Portfolio extends Component {
   }
 
   render () {
-    let Portfoliocard = this.state.Projects.map(project => {
+    let Portfoliocard = this.state.Projects.map((project, i) => {
       return (
           <Col sm="4">
-          <PortfolioCards key={project.id} {...project} atlText={""}/>
+          <PortfolioCards key={i} {...project} atlText={""}/>
           </Col>
       )
     })

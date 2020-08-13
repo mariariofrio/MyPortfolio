@@ -1,8 +1,8 @@
 import React from "react";
 import "../pages/contact.css";
-import github from  "../assets/github.png";
+import github from  "../pages/github.png";
 import Anchor from "../component/Anchor";
-import linkedin from "../assets/linkedinicon.jpg";
+import linkedin from "../pages/linkedinicon.jpg";
 
 function Contact() {
     return (

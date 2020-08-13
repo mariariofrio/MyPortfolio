@@ -4,6 +4,8 @@ import React, { Component } from "react";
 // import Anchor from "../component/Anchor"
 import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
 import Anchor from "../Anchor";
+
+//import burgerpic from "../../assets/mypicture.jpg"
 // import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
 // import Image from "../images"
 class  PortfolioCards extends Component {
@@ -11,11 +13,16 @@ class  PortfolioCards extends Component {
         super(props);
     }
     render() {
+        console.log(this.props.image)
         return (
             <div>
                 <Card>
-                    <CardImg classes="my-image" source={require("../../assets/index" )} altText={""}>
-                        
+                    <CardImg classes="my-image" src={
+                        `/assets/${this.props.image}`
+                       
+                        } altText={""}>
+
+                    
                     </CardImg>
                     <CardBody>
                         <CardTitle> {this.props.projectname}
