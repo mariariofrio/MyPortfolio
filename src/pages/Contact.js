@@ -3,6 +3,8 @@ import "../pages/contact.css";
 import github from  "../pages/github.png";
 import Anchor from "../component/Anchor";
 import linkedin from "../pages/linkedinicon.jpg";
+import { Link, } from 'react-router-dom';
+import { Breadcrumb} from "react-bootstrap"
 
 function Contact() {
     return (
@@ -15,7 +17,7 @@ function Contact() {
             <div className="row ">
 
                 {/* <!-- Grid column --> */}
-                <div className="col-md-5 mt-md-2 mt-4">
+                <div className="col  content">
 
                     {/* <!-- Links --> */}
                     <h6 className="text-uppercase font-weight-bold">Contact</h6>
@@ -23,27 +25,26 @@ function Contact() {
                         <p>
                             <i></i> Georgia, US</p>
                         <p>
-                            <i></i> maria.riofrio.mr@gmail.com</p>
+                            <i></i> 678 283 7616</p>
                         <p>
-                            <i></i> + 01 678 283 7616</p>
+                            <i></i> maria.riofrio.mr@gmail.com</p>
                 </div>
-                <Anchor>
-                    <div className="col-md-9 mb-md-0 mb-4">
-                        <a href="https://github.com/mariariofrio" target="blank"></a>
+                
+                    <div className="col-5">
+                            <Breadcrumb.Item href="https://github.com/mariariofrio">
                             <img src={github} alt="swimmer" height="50px" width="auto fit-center; border:none" style={{float: ''}} />
-                            <hr></hr>
-                            <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US"
-                                data-type="horizontal" data-theme="dark" data-vanity="maria-jose-riofrio-b97780148">
-                            <img src={linkedin} alt="swimmer" height="50px" width="auto fit-center; border:none" style={{float: ''}} /><a
-                                    class="LI-simple-link"
-                                    
-                                    href='https://www.linkedin.com/in/maria-jose-riofrio-b97780148?trk=profile-badge'></a>
-                            </div> 
-                            <hr></hr>
-                            <a href="https://docs.google.com/document/d/1OZ-gX6Os9Rnt8roIl1OzZNyJNyZsH5A7pja3Tgi9prk/edit?usp=sharing" font="black">Resume</a>
-
+                            </Breadcrumb.Item>
+                            
+                            <div className= "col-4 column1 ">       
+                            <Breadcrumb.Item
+                                    href ='https://www.linkedin.com/in/maria-jose-riofrio-b97780148?trk=profile-badge'>
+                            <img src={linkedin} alt="swimmer" height="50px" width="auto fit-center; border:none" style={{float: ''}} />
+                            </Breadcrumb.Item>
+                        </div>
+                           <div className= "col"> 
+                            <Breadcrumb.Item href='https://docs.google.com/document/d/1OZ-gX6Os9Rnt8roIl1OzZNyJNyZsH5A7pja3Tgi9prk/edit?usp=sharing' font="black">Resume</Breadcrumb.Item>
+                           </div>                         
                     </div>
-                </Anchor>
             </div>
           
          

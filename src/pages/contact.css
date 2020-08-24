@@ -1,4 +1,17 @@
 .container-fluid {
-    margin-left: 20%!important;
-    padding-top: 9%;
+
+    padding-top: 4%;
+    width: 6%;
+    height: 6%;
+    margin: 1%;
+    background-color: rgba(184, 238, 245, 0.335);
+    display: inline-block;
+}
+
+.content {
+    margin-left: 9%;
+}
+.column1  {
+    padding-top: 4%;
+    padding-bottom: 4%;
 }

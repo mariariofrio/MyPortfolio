@@ -2,8 +2,8 @@ import React, { Component } from "react";
 // import projects from "../assets/projects.json";
 // import Project from "../component/Projects/Project";
 // import Anchor from "../component/Anchor"
-import { Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
-import Anchor from "../Anchor";
+import { Card, CardImg, CardBody, CardTitle, CardText, Badge } from 'reactstrap';
+// import Anchor from "../Anchor";
 
 //import burgerpic from "../../assets/mypicture.jpg"
 // import {Burgerapp, Notetaker, Passwordapp, RainChck, Weatherapp,Employeedirectory} from '../../assets/index';
@@ -15,12 +15,12 @@ class  PortfolioCards extends Component {
     render() {
         console.log(this.props.image)
         return (
-            <div>
+            
                 <Card>
                     <CardImg classes="my-image" src={
                         `/assets/${this.props.image}`
                        
-                        } altText={""}>
+                        } alttext={""}>
 
                     
                     </CardImg>
@@ -32,16 +32,16 @@ class  PortfolioCards extends Component {
                             <CardText>{this.props.description}
                             </CardText>
                         </CardText>
-                        <Anchor htmlRef={this.props.repoLink}>
-                            <Anchor htmlRef={this.props.sitelink}>
-                            </Anchor>
+                        <Badge color="info" >
+                            <Badge  to={this.props.sitelink}> 
+                            </Badge>
                            
-                    </Anchor>
+                    </Badge>
                     
                 </CardBody>
         </Card>
 
-        </div>
+        
         )
     }
 }

@@ -14,17 +14,18 @@ class Portfolio extends Component {
   }
 
   render () {
-    let Portfoliocard = this.state.Projects.map((project, i) => {
+    let Portfoliocard = this.state.Projects.map((project) => {
       return (
           <Col sm="4">
-          <PortfolioCards key={i} {...project} atlText={""}/>
+          <PortfolioCards key={project} 
+          {...project}/>
           </Col>
       )
     })
     return (
       <Container >
         <Row xs="4">
-          {Portfoliocard}
+        {Portfoliocard}
         </Row>
       </Container>
     )

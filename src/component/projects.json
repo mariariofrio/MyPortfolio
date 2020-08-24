@@ -1,15 +1,7 @@
 [
+ 
     {
         "id": 1,
-        "projectname": "Burger App",
-        "type": "Backend",
-        "image": "burgerapp.JPG",
-        "description": "Used MySql to stored the data",
-        "sitelink": "https://eatmoreburgers.herokuapp.com/",
-        "repolink": "https://github.com/mariariofrio/burgerapp"
-    },
-    {
-        "id": 2,
         "projectname": "PasswordApp",
         "type": "Frontend",
         "image":
@@ -19,7 +11,7 @@
         "repolink": "https://github.com/mariariofrio/passwordap"
     },
     {
-        "id": 3,
+        "id": 2,
         "projectname": "WeatherApp",
         "type": "Frontend",
         "image":
@@ -29,7 +21,7 @@
         "repolink": "https://github.com/mariariofrio/weatherappp"
     },
     {
-        "id": 4,
+        "id": 3,
         "projectname": "RainChck",
         "type": "Front and Backend",
         "image":
@@ -39,7 +31,7 @@
         "repolink": "https://github.com/mariariofrio/RainChk"
     },
     {
-        "id": 5,
+        "id": 4,
         "projectname": "Employee Directory",
         "type": "Front and Backend",
         "image":
@@ -47,16 +39,7 @@
         "description": "You can filter employees and get less information",
         "sitelink": "https://directoryemployees.herokuapp.com/",
         "repolink": "https://github.com/mariariofrio/employerdirectory"
-    },
-    {
-        "id": 6,
-        "projectname": "Note Taker",
-        "type": "Backend",
-        "image":
-     "Notetaker.JPG",
-        "description": "You can add and delete notes",
-        "sitelink": "https://dashboard.heroku.com/apps/notetaker18", 
-        "repolink": "https://github.com/mariariofrio/notetaker"
     }
+   
     
 ]
