@@ -17,7 +17,7 @@ function Contact() {
             <div className="row ">
 
                 {/* <!-- Grid column --> */}
-                <div className="col  content">
+                <div className="col-sm-4 .offset-sm-1  content">
 
                     {/* <!-- Links --> */}
                     <h6 className="text-uppercase font-weight-bold">Contact</h6>
@@ -30,7 +30,7 @@ function Contact() {
                             <i></i> maria.riofrio.mr@gmail.com</p>
                 </div>
                 
-                    <div className="col-5">
+                    <div className="col-sm-4 .offset-sm-1">
                             <Breadcrumb.Item href="https://github.com/mariariofrio">
                             <img src={github} alt="swimmer" height="50px" width="auto fit-center; border:none" style={{float: ''}} />
                             </Breadcrumb.Item>

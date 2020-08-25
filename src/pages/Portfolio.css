@@ -7,12 +7,12 @@
   padding-right: 5px; 
   /* /* margin-left: au;
   margin-left: auto; */
-  overflow: auto;
+  
 }
   .card {
     position:relative;
     width:330px;
-    height:412px;
+    height:450px;
     background: #EEEEEE;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
@@ -44,12 +44,12 @@
     position:absolute;
     left:0;
     bottom:0;
-    width:100%;
+    /* width:100%; */
     height:90px;
     box-sizing:border-box;
     transition: 0.5s cubic-bezier(.22,.68,0,1.71);
   /*   transition:0.3s ease-out; */
-     overflow:hidden;
+    
     padding:12px;
     background: #EEEEEE;
     border-bottom-left-radius:18px;
@@ -72,10 +72,11 @@
     transform: scale(1.1);
    
   }
-  p {
-    text-align:left;
+  .card-text  {
+    
     font-size:15px;
     padding:10px 20px;
+    text-decoration-color: red;
   }
   
   /* button {

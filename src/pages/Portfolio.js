@@ -17,8 +17,7 @@ class Portfolio extends Component {
     let Portfoliocard = this.state.Projects.map((project) => {
       return (
           <Col sm="4">
-          <PortfolioCards key={project} 
-          {...project}/>
+          <PortfolioCards key={project} {...project}/>
           </Col>
       )
     })

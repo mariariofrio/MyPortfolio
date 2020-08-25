@@ -20,16 +20,7 @@
         "sitelink": "https://mariariofrio.github.io/weatherappp/",
         "repolink": "https://github.com/mariariofrio/weatherappp"
     },
-    {
-        "id": 3,
-        "projectname": "RainChck",
-        "type": "Front and Backend",
-        "image":
-        "RainChck.PNG",
-        "description": "You can add any TODOS and get the weather of the time/city selected",
-        "sitelink": "ecuador@mycompany.com",
-        "repolink": "https://github.com/mariariofrio/RainChk"
-    },
+    
     {
         "id": 4,
         "projectname": "Employee Directory",
