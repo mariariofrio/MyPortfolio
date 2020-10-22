@@ -5,6 +5,7 @@ import Header from "../component/header";
 import {Media, Col, Row, Container} from "reactstrap";
 import Contact from "../pages/Contact"
 import Portfolio from "../pages/Portfolio"
+import { faAlignCenter } from "@fortawesome/free-solid-svg-icons";
 
 function Card() {
   return (
@@ -12,14 +13,14 @@ function Card() {
     <Header />
     <Container className="themed-container" fluid="sm">
       <Row>
-        <Col sm={{ size: 2  }}>
+        <Col sm={{ size: 2 , offset: 1  }}>
     <Media >
         <Media src={mypicture} className="image" height="350px"  />
       </Media>
       </Col>
       
       <Media body>
-      <Col sm={{ size: 6 , offset: 3 }}>
+      <Col sm={{ size: 6 , offset: 4 }}>
         <Media heading>
           About Me
         </Media>

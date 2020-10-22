@@ -1,10 +1,5 @@
 .jumbotron {
     background-color: rgba(32, 39, 134, 0) !important;
-    size: 100px;
-    padding-bottom: 0%;
-    padding-top: 0% !important;
-    justify-content: center !important;
-}
-h2 {
-    margin: 2% !important;
+    
+    margin-top: -5%;
 }

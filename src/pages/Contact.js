@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/contact.css";
 import github from  "../pages/github.png";
-import Anchor from "../component/Anchor";
+
 import linkedin from "../pages/linkedinicon.jpg";
 import { Link, } from 'react-router-dom';
 import { Breadcrumb} from "react-bootstrap"
